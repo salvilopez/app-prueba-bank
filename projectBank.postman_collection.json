@@ -1,0 +1,1318 @@
+{
+	"info": {
+		"_postman_id": "7dc52bea-0b24-4a22-8566-97e31528e333",
+		"name": "projectBank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "getAllUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/users",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/user/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsersByEmail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/user-mail/salvilopezpruebas@gmail.com",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user-mail",
+								"salvilopezpruebas@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createUSer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"name\": \"usuariocreadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariocreadopostman@gmail.com\",\r\n    \"password\": \"passwordcreadaporstman\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/user",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModifyUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"usuariomodificadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariocreadopostman@gmail.com\",\r\n    \"password\": \"$2a$10$fbQsnesrL.idaJMxkIEO6OcVF2/T.7JvRViWyOSBfFykQ4qhlhENe\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/user",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"usuariomodificadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariomodificadopostman@gmail.com\",\r\n    \"password\": \"$2a$10$v2eEohC7nOcreEqb6N1DGe84yUoLonvzDXAMvWbJ9NWsIrruVyEdO\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/user/4",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"usuariomodificadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariomodificadopostman@gmail.com\",\r\n    \"password\": \"$2a$10$v2eEohC7nOcreEqb6N1DGe84yUoLonvzDXAMvWbJ9NWsIrruVyEdO\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/users",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "movements",
+			"item": [
+				{
+					"name": "getAllMovements",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMovementsByIdAccountCategoryAndOperationType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?category=UTILITIES&operation=REST",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "UTILITIES"
+								},
+								{
+									"key": "operation",
+									"value": "REST"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovementsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movement/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovement[fechaInt,fechaFin]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements?startdate=2021-01-13&finishdate=2021-02-20",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "2021-01-13"
+								},
+								{
+									"key": "finishdate",
+									"value": "2021-02-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovements[operation]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements?operation=sum",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							],
+							"query": [
+								{
+									"key": "operation",
+									"value": "sum"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovements[category]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements?category=UTILITIES",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "UTILITIES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovements[paymet]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements?payment=ACCOUNT",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							],
+							"query": [
+								{
+									"key": "payment",
+									"value": "ACCOUNT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMovementsByAccountId[fechaInt,fechaFin,payment]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?startdate=2021-05-01&finishdate=2021-05-30&payment=ACCOUNT",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "2021-05-01"
+								},
+								{
+									"key": "finishdate",
+									"value": "2021-05-30"
+								},
+								{
+									"key": "payment",
+									"value": "ACCOUNT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovbyaccntid[fechaInt,fechaFin]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?startdate=2021-01-13&finishdate=2021-02-20",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "2021-01-13"
+								},
+								{
+									"key": "finishdate",
+									"value": "2021-02-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovbyaccntid[operation]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?operation=sum",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "operation",
+									"value": "sum"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovbyaccntid[category]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?category=UTILITIES",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "UTILITIES"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovbyaccntid[paymet]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?payment=ACCOUNT",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "payment",
+									"value": "ACCOUNT"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovementsByAccountId[fechaInt][fechafin][category]",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1?category=FUEL&operation=REST&startdate=2021-01-01&finishdate=2021-01-20",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "FUEL"
+								},
+								{
+									"key": "operation",
+									"value": "REST"
+								},
+								{
+									"key": "startdate",
+									"value": "2021-01-01"
+								},
+								{
+									"key": "finishdate",
+									"value": "2021-01-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getmovbyaccntid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movementsaccount/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movementsaccount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createmovement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"operationType\": \"SUM\",\r\n    \"paymentType\": \"ACCOUNT\",\r\n    \"date\": \"2018-11-30T18:35:24Z\",\r\n    \"quantity\": 200.0,\r\n    \"account\": {\r\n        \"id\": 2,\r\n        \"iban\": \"es2452645435455\",\r\n        \"currentBalance\": 5600.0,\r\n        \"currentCreditCardBalance\": 600.0,\r\n        \"currentGlobalBalance\": 6200.0,\r\n        \"users\":null,\r\n        \"cards\":null\r\n    },\r\n    \"remainingBalance\": 4200.0,\r\n    \"reminingCreditBalance\": 0.0,\r\n    \"categoryType\": \"PAID\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movement",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifymovement",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 15,\r\n    \"operationType\": \"SUM\",\r\n    \"paymentType\": \"ACCOUNT\",\r\n    \"date\": \"2018-11-30T18:35:24Z\",\r\n    \"quantity\": 700.0,\r\n    \"account\": {\r\n        \"id\": 2,\r\n        \"iban\": \"es2452645435455\",\r\n        \"currentBalance\": 5800.0,\r\n        \"currentCreditCardBalance\": 600.0,\r\n        \"currentGlobalBalance\": 6400.0,\r\n        \"users\": null,\r\n        \"cards\": null\r\n    },\r\n    \"remainingBalance\": 5800.0,\r\n    \"reminingCreditBalance\": 0.0,\r\n    \"categoryType\": \"PAID\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movement",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletemovement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movement/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllmovement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"usuariomodificadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariomodificadopostman@gmail.com\",\r\n    \"password\": \"$2a$10$v2eEohC7nOcreEqb6N1DGe84yUoLonvzDXAMvWbJ9NWsIrruVyEdO\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/movements",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"movements"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BankCard",
+			"item": [
+				{
+					"name": "getAllBankcard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcards",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBankcardsById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getbankcardByuser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard-user",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBankcardsByAccount",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard-account",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBankcards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id\": null,\r\n    \"pan\": \"1239123939545q39\",\r\n    \"ccv\": \"114\",\r\n    \"expirationDate\": \"2021-05-13T13:13:44.192817Z\",\r\n    \"account\":null\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModifyBankcards",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"pan\": \"54545544545\",\r\n    \"ccv\": \"114\",\r\n    \"expirationDate\": \"2021-05-13T13:13:44.192817Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBankcards",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcard/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcard",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllBankcards",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/bankcards",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"bankcards"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "getAllAcounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/accounts",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getaccountById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account/2",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getaccountbyiban",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/accountbyiban/es2452645435454",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"accountbyiban",
+								"es2452645435454"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAccountByUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account-user",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTotalBalanceByBalanceTypeAndUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account-balancetype-global",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account-balancetype-global"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAccountBalanceById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account-balance/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account-balance",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "creatAccount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"iban\": \"es245264545547\",\r\n    \"currentBalance\": 5200.0,\r\n    \"currentCreditCardBalance\": 600.0,\r\n    \"currentGlobalBalance\": 5800.0,\r\n    \"users\": [],\r\n    \"movements\": [ ],\r\n    \"cards\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModifyAccount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"iban\": \"es245264545547\",\r\n    \"currentBalance\": 1000.0,\r\n    \"currentCreditCardBalance\": 600.0,\r\n    \"currentGlobalBalance\": 5800.0,\r\n    \"users\": [],\r\n    \"movements\": [],\r\n    \"cards\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteaccount",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/account/1",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"account",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllaccount",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"usuariomodificadopostman\",\r\n    \"surname\": \"Lopez\",\r\n    \"email\": \"usuariomodificadopostman@gmail.com\",\r\n    \"password\": \"$2a$10$v2eEohC7nOcreEqb6N1DGe84yUoLonvzDXAMvWbJ9NWsIrruVyEdO\",\r\n    \"accounts\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/api/accounts",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"borja@diaz\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/auth/login",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"ullllll@diaz.com\",\r\n    \"password\":\"usuregistropostman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://projectbankingenia.herokuapp.com/auth/registro",
+							"protocol": "https",
+							"host": [
+								"projectbankingenia",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth",
+								"registro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
